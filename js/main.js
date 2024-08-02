@@ -1,5 +1,17 @@
 console.log("funcionando")
 
+document.addEventListener("DOMContentLoaded", ev =>){
+    MostrarHTML()
+}
+
+
+//
+function MostrarHTML() {
+    let navbar = document.getElementById("NavBar").innerHTML = CrearNavBar
+    let footer = document.getElementById("Footer").innerHTML = CrearFooter
+    let Noticias = document.getElementById("Noticias").innerHTML = CrearTarjetaNoticias
+}
+
 //Nav   
 function CrearNavBar() {
     let html = `
