@@ -9,9 +9,9 @@ document.addEventListener("DOMContentLoaded", ev =>{
 
 function MonstrarDatosConfig() {
     //truco fetch
-    let url;
+    let url = "/js/Configuraciones.json"
 
-    fetch('url')
+    fetch(url)
     
         .then(response => response.json())
     
