@@ -3,7 +3,7 @@ export const ObtenerDatosConfiguracion = async () => {
     const url = "/js/Configuraciones.json"
     try {
 
-        const response = await fetch('url');
+        const response = await fetch(url);
         if (response.status == "200") {
         const data = await response.json();
         
@@ -15,7 +15,7 @@ export const ObtenerDatosConfiguracion = async () => {
 
     } catch (error) {
 
-        console.log(error);
+        console.log("error en la red" + error);
 
     }
 
