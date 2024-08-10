@@ -3,9 +3,9 @@
 ///0-
 export function MostrarHTML() {
   //
-  let navbar = document.getElementById("Navbar").innerHTML= CrearNavbar();
-  let footer= document.getElementById("Footer").innerHTML= CrearFooter();
-  let Noticias = document.getElementById("Noticias").innerHTML= CrearTarjetaNoticias();
+  // let navbar = document.getElementById("Navbar").innerHTML= CrearNavbar();
+  // let footer= document.getElementById("Footer").innerHTML= CrearFooter();
+  // let Noticias = document.getElementById("Noticias").innerHTML= CrearTarjetaNoticias();
   let Banner1 = document.getElementById("Banner1").innerHTML = CrearBanner1();
   let Banner2 = document.getElementById("Banner2").innerHTML = CrearBanner2();
   let tabla = document.getElementById("Tabla").innerHTML = CrearTabla();
@@ -17,23 +17,7 @@ export function MostrarHTML() {
 
 
 //Main -Secciones 1 Noticias 
-const CrearTarjetaNoticias = () => {
-  let html = `
 
-   <section class=" banner  col-lg-4 ">
-        <div class="card h-100">
-          <img src="img/1-Noticia.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Lorem ipsum dolor.</h5>
-            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <a href="#" class="btn btn-primary">Más información <i class="fas fa-angle-double-right"></i></a>
-          </div>
-        </div>
-      </section>
-
-  `
-  return html
-}
 
 const CrearBanner1 = () => {
   let html = `
